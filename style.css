@@ -1,0 +1,340 @@
+/* ================= BODY ================= */
+body{
+    margin:0;
+    font-family:"dancing script", cursive;
+
+    background:linear-gradient(rgba(236,232,232,0.92),rgba(0,0,0,0.4));
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    color:#f7f8f4;
+
+    transition:background-image 0.3s ease-in-out, opacity 0.6s ease;
+    opacity:1;
+}
+
+/* ================= HEADER ================= */
+.topbar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:8px 15px;
+    background:linear-gradient(90deg,#d6e31f,#261f75);
+    color:white;
+    box-shadow:0 4px 20px rgba(0,0,0,0.2);
+    position:relative;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.topbar img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:2px solid #0a4400;
+    background-color:#f8fbfafd;
+}
+
+.logo h2{
+    font-size:30px;
+    color:whitesmoke;
+    margin:0;
+}
+
+/* ================= NAV ================= */
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    padding:14px;
+    background:rgba(113,164,207,0.85);
+    backdrop-filter:blur(6px);
+}
+
+nav a{
+    text-decoration:none;
+    padding:10px 16px;
+    background:#1c014b;
+    color:white;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#0ffb02;
+    color:#000;
+    transform:translateY(-3px);
+}
+
+/* ================= HERO ================= */
+.hero{
+    height:520px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:url("sano2.jpg") center/cover no-repeat;
+}
+
+.hero h1{
+    font-size:44px;
+}
+
+/* ================= BUTTON ================= */
+button{
+    margin-top:15px;
+    padding:12px 22px;
+    border:none;
+    border-radius:10px;
+    background:#4de402;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#000804;
+    transform:scale(1.05);
+}
+
+/* ================= GRID (UPDATED) ================= */
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:22px;
+    padding:35px;
+    align-items:flex-start;
+}
+
+/* ================= CARD (UPDATED) ================= */
+.card{
+    gap: 10px;
+    display:inline-block;
+    width:fit-content;
+    height:fit-content;
+    background:grey;
+    border-radius:16px;
+    padding:15px;
+    color:#000;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+}
+.new{
+    display: flex;
+    gap:40px;
+}
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* IMPORTANT: image controls */
+.card img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    display:block;
+    border-radius:10px;
+}
+
+/* ================= APPLY FORM ================= */
+.apply-box{
+    display:none;
+    flex-direction:column;
+    gap:10px;
+    width:280px;
+    margin:15px auto;
+}
+
+.apply-box input,
+.apply-box select{
+    padding:10px;
+    border-radius:8px;
+    border:none;
+    outline:none;
+}
+
+#msg{
+    margin-top:10px;
+    font-weight:bold;
+    color:white;
+}
+
+/* ================= COUNTERS ================= */
+.counter-box{
+    text-align:right;
+    padding:10px;
+}
+
+.counter-title{
+    font-size:18px;
+    color:#fff;
+    font-weight:bold;
+}
+
+.counter-number{
+    font-size:60px;
+    font-weight:900;
+    color:#4de402;
+    line-height:1;
+    animation:pulse 2.5s infinite ease-in-out;
+}
+
+.counter-number::after{
+    content:"+";
+    color:white;
+    margin-left:4px;
+    font-size:35px;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+    100%{transform:scale(1);}
+}
+
+/* ================= FOOTER ================= */
+.footer{
+    background:#0b1a3a;
+    color:white;
+    padding:40px 20px;
+    margin-top:40px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.footer-box h2,
+.footer-box h3{
+    color:#4de402;
+}
+
+.footer-box p{
+    font-size:14px;
+    line-height:1.6;
+    color:#ddd;
+}
+
+.footer-box a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    margin:5px 0;
+    transition:0.3s;
+}
+
+.footer-box a:hover{
+    color:#4de402;
+    transform:translateX(5px);
+}
+
+.footer-bottom{
+    text-align:center;
+    margin-top:20px;
+    padding-top:15px;
+    border-top:1px solid rgba(255,255,255,0.2);
+    font-size:14px;
+    color:#bbb;
+    background-color: rgb(144, 4, 214);
+}
+
+/* ================= CONTACT FORM ================= */
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    max-width:400px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:12px;
+    border-radius:10px;
+    border:none;
+    outline:none;
+    font-family:inherit;
+}
+
+.contact-form button{
+    background:#4de402;
+    color:#000;
+    font-weight:bold;
+}
+
+.contact-form button:hover{
+    background:#000;
+    color:#fff;
+}
+
+#cmsg{
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* ================= MODAL ================= */
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    overflow:auto;
+    z-index:999;
+}
+
+.modal-content{
+    background:white;
+    margin:50px auto;
+    padding:20px;
+    width:90%;
+    border-radius:10px;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    right:20px;
+    top:10px;
+    font-size:40px;
+    color:white;
+    cursor:pointer;
+}
+
+/* ================= GALLERY ================= */
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:10px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:auto;
+    border-radius:8px;
+}
+
+/* ================= VIDEO ================= */
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(20px,1fr));
+    gap:10px;
+    margin-top:20px;
+    text-align: center;
+}
+
+.video-grid video{
+    width:100%;
+    border-radius:80px;
+}

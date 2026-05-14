@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="logo">
+    <img src="assets/logo.png">
+    <h2>cpec saint babeth tss</h2>
+  </div>
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="departments.html">Departments</a>
+<a href="workshops.html">Workshops</a>
+<a href="staff.html">Staff</a>
+<a href="gallery.html">Gallery</a>
+<a href="partners.html">Partners</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<!-- ================= CONTACT INFO ================= -->
+<section class="card">
+  <h3>Contact Information</h3>
+  <p>Email: info@cpec.rw</p>
+  <p>Phone: +250 788 123 456</p>
+</section>
+
+<!-- ================= CONTACT FORM ================= -->
+
+
+  <h3 style="color: rgb(22, 245, 11);font-size:50px ;text-align: center;">Send Us a Message</h3>
+
+  <form class="contact-form" onsubmit="sendMessage(event)">
+
+    <input type="text" id="cname" placeholder="Your Name" required>
+
+    <input type="email" id="cemail" placeholder="Your Email" required>
+
+    <input type="text" id="csubject" placeholder="Subject" required>
+
+    <textarea id="cmessage" placeholder="Your Message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+    <p id="cmsg"></p>
+
+  </form>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h2>CPEC Saint Babeth</h2>
+      <p>
+        Providing quality education in general and technical studies since 2015.
+      </p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="departments.html">Departments</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="staff.html">Staff & Management</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="partners.html">Partners</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+<img src="assets/location.png" style="width:300px;height: 300px;">
+    <div class="footer-box">
+      <h3>Contact Info</h3>
+      <p>📍 Gicumbi District, Northern Province, Rwanda</p>
+      <p>📞 +250 788 123 456</p>
+      <p>✉ info@cpecsaintbabeth.rw</p>
+      <p>🕒 Mon-Fri: 8:00 - 17:00</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2026 CPEC Saint Babeth | All Rights Reserved
+  </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
