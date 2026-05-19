@@ -80,9 +80,7 @@ function animateCounter(id, start, end, duration) {
 // ================= BACKGROUND SLIDER =================
 const images = [
     "assets/bg.png",
-    "assets/students2.jpg",
-    "assets/sodlaborator.jpg",
-    "assets/aglicurture.png",
+    "assets/realculture.jpg",
     "assets/schoolteam.png"
 ];
 
